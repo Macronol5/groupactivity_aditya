@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Project</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="navbar">
+        <ul class="nav-container">
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Search</a></li>
+            <li><a href="/insert">Insert</a></li>
+        </ul>
+    </div>
+    <h1>Insert Data</h1>
+    <form method="post" action="/insert">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
